@@ -1,0 +1,73 @@
+/* ── WordPanel ────────────────────────────────────────────────────────────── */
+.word-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.word-panel--set {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: #86efac;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.word-panel--info {
+  color: #fde68a;
+  font-size: 0.9rem;
+}
+
+.word-label {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.word-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.word-input {
+  flex: 1;
+  background: #0f172a;
+  border: 1.5px solid #334155;
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  color: #f1f5f9;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  max-width: 280px;
+}
+.word-input:focus { border-color: #a78bfa; }
+
+.word-set-btn {
+  background: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.word-set-btn:hover:not(:disabled) { background: #6d28d9; }
+.word-set-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.word-change-btn {
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 0.3rem 0.75rem;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.word-change-btn:hover { border-color: #818cf8; color: #c7d2fe; }

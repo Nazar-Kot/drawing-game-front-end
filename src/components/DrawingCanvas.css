@@ -1,0 +1,77 @@
+/* ── DrawingCanvas ─────────────────────────────────────────────────────────── */
+.canvas-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.color-row {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.12s, border-color 0.12s;
+  padding: 0;
+}
+.color-swatch:hover    { transform: scale(1.2); }
+.color-swatch.active   { border-color: #f1f5f9; transform: scale(1.2); }
+
+.size-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.size-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #0f172a;
+  border: 1.5px solid #334155;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.12s;
+}
+.size-btn:hover  { border-color: #818cf8; }
+.size-btn.active { border-color: #818cf8; background: #1e1b4b; }
+
+.clear-btn {
+  margin-left: auto;
+  background: #7f1d1d;
+  border: none;
+  border-radius: 8px;
+  padding: 0.35rem 0.75rem;
+  color: #fca5a5;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.clear-btn:hover { background: #991b1b; }
+
+/* Canvas */
+.drawing-canvas {
+  display: block;
+  background: #ffffff;
+  max-width: 100%;
+  height: auto;
+}
+.drawing-canvas.drawable { cursor: crosshair; }

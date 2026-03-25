@@ -1,0 +1,37 @@
+/* ── LogSection ───────────────────────────────────────────────────────────── */
+.log-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 180px;
+  min-height: 0;
+  border-top: 1px solid #334155;
+}
+
+.log-header {
+  padding: 0.5rem 1rem;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.log-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.log-entry {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  font-size: 0.78rem;
+}
+
+.log-ts   { color: #475569; flex-shrink: 0; font-size: 0.72rem; }
+.log-text { color: #94a3b8; }

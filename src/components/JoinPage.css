@@ -1,0 +1,90 @@
+/* ── JoinPage ─────────────────────────────────────────────────────────────── */
+.join-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  padding: 1.5rem;
+}
+
+.join-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.join-logo { font-size: 3.5rem; line-height: 1; }
+
+.join-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg,#a78bfa,#60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.join-sub { color: #94a3b8; font-size: 0.95rem; margin-top: -0.5rem; }
+
+.join-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+}
+
+.join-field label { font-size: 0.85rem; color: #94a3b8; font-weight: 500; }
+
+.join-field input {
+  background: #0f172a;
+  border: 1.5px solid #334155;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  color: #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.join-field input:focus { border-color: #818cf8; }
+
+.field-error { color: #f87171; font-size: 0.8rem; }
+
+.join-status { color: #94a3b8; font-size: 0.875rem; }
+.join-error  { color: #f87171; font-size: 0.875rem; }
+
+.join-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.15s;
+}
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn:not(:disabled):hover { transform: translateY(-2px); }
+.btn:not(:disabled):active { transform: translateY(0); }
+
+.btn-hint { font-size: 0.75rem; font-weight: 400; opacity: 0.8; }
+
+.btn-drawer  { background: linear-gradient(135deg,#6d28d9,#4f46e5); color: #fff; }
+.btn-guesser { background: linear-gradient(135deg,#0369a1,#0891b2); color: #fff; }
