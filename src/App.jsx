@@ -33,6 +33,8 @@ export default function App() {
     setLogs(prev => [...prev, { id: Date.now() + Math.random(), text, ts: new Date().toLocaleTimeString() }])
   }, [])
 
+  console.log(`Connecting to SignalR hub at ${import.meta.env.VITE_HUB_URL}...`);
+
   // ── Build and start SignalR connection once ───────────────────────────────
   useEffect(() => {
     const conn = new signalR.HubConnectionBuilder()
